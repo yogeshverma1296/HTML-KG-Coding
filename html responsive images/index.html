@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Responsive Images</title>
+  </head>
+  <body>
+    <picture>
+      <img
+        sizes="(max-width: 1400px) 100vw, 1400px"
+        srcset="
+          eren_hisshv_c_scale,w_200.webp   200w,
+          eren_hisshv_c_scale,w_696.webp   696w,
+          eren_hisshv_c_scale,w_1045.webp 1045w,
+          eren_hisshv_c_scale,w_1359.webp 1359w,
+          eren_hisshv_c_scale,w_1400.webp 1400w
+        "
+        src="eren_hisshv_c_scale,w_1400.webp"
+        alt=""
+      />
+    </picture>
+  </body>
+</html>
