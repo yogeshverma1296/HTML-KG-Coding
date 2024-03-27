@@ -1,0 +1,179 @@
+<!-- Project Level 5
+List, Tables & Forms
+1. Create a page with all type of ordered list and one unordered list.
+2. Create a table with headings, captions and a few rows. One of heading should take at least 3 columns.
+3. Create a contact me form with relevant details for your resume website.
+4. Use iFrame to add this video to your page. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Level 5 - List, Tables & Forms</title>
+    <!-- style css linked -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#orderedlist">ordered list</a></li>
+          <li><a href="#unorderedlist">unordered list</a></li>
+          <li><a href="#education">education</a></li>
+          <li><a href="#contactmeform">contact me form</a></li>
+          <li><a href="#yt-video">yt-video</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>List, Tables & Forms</h1>
+      <!-- 1. Create a page with all type of ordered list and one unordered list. -->
+      <!-- ordered list -->
+      <section class="orderedlist" id="orderedlist">
+        <h2>All type of Ordered List</h2>
+        <!-- type="1" -->
+        <ol type="1">
+          <li>ordered list item-1</li>
+          <li>ordered list item-2</li>
+          <li>ordered list item-3</li>
+        </ol>
+        <!-- type="A" -->
+        <ol type="A">
+          <li>ordered list item-1</li>
+          <li>ordered list item-2</li>
+          <li>ordered list item-3</li>
+        </ol>
+        <!-- type="a" -->
+        <ol type="a">
+          <li>ordered list item-1</li>
+          <li>ordered list item-2</li>
+          <li>ordered list item-3</li>
+        </ol>
+        <!-- type="I" -->
+        <ol type="I">
+          <li>ordered list item-1</li>
+          <li>ordered list item-2</li>
+          <li>ordered list item-3</li>
+        </ol>
+        <!-- type="i" -->
+        <ol type="i">
+          <li>ordered list item-1</li>
+          <li>ordered list item-2</li>
+          <li>ordered list item-3</li>
+        </ol>
+      </section>
+      <!-- unordered list -->
+      <section class="unorderedlist" id="unorderedlist">
+        <h2>One Unordered List</h2>
+        <!-- type="square" -->
+        <ul type="square">
+          <li>unordered list item 1</li>
+          <li>unordered list item 2</li>
+          <li>unordered list item 3</li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <!-- 2. Create a table with headings, captions and a few rows. One of heading should take at least 3 columns. -->
+      <table class="education">
+        <caption>
+          Education Details
+        </caption>
+        <thead>
+          <tr>
+            <th>S.No. </th>
+            <th>Degree </th>
+            <th>Institution </th>
+            <th>Board/Uni </th>
+            <th>Marks </th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- bca -->
+          <tr>
+            <td>1. </td>
+            <td>Bachelor's of Computer Applications (BCA)</td>
+            <td>Govt. Bikram College of Commerce, Patiala</td>
+            <td>Punjabi University, Patiala</td>
+            <td>77.6%</td>
+          </tr>
+          <!-- 12th -->
+          <tr>
+            <td>2. </td>
+            <td>Senior Secondary Education (+2 Commerce)</td>
+            <td>Mukat Public School, Rajpura</td>
+            <td>C.B.S.E., Delhi</td>
+            <td>89.2%</td>
+          </tr>
+          <!-- 10th -->
+          <tr>
+            <td>3. </td>
+            <td>Matriculation Education (10th)</td>
+            <td>C.M. Public School, Rajpura</td>
+            <td>C.B.S.E., Delhi</td>
+            <td>82.8%</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+
+      <hr />
+
+      <!-- 3. Create a contact me form with relevant details for your resume website. -->
+      <section class="contactmeform" id="contactmeform">
+        <h2>Contact Form</h2>
+        <form action="#">
+          <fieldset>
+            <legend>Contact Form</legend>
+
+            <!-- Full Name -->
+            <p>
+              <label for="fullname">Full Name: </label>
+              <input type="text" id="fullname" name="fullname" />
+            </p>
+
+            <!-- Email -->
+            <p>
+              <label for="email">Email: </label>
+              <input type="email" id="email" name="email" />
+            </p>
+
+            <!-- Mobile Number -->
+            <p>
+              <label for="mobilenumber">Mobile Number: </label>
+              <input type="number" name="mobilenumber" id="mobilenumber" />
+            </p>
+
+            <!-- Reason -->
+            <p>
+              <label for="reason">Reason: </label>
+              <textarea name="reason" id="reason" cols="60" rows="1"></textarea>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+
+      <hr />
+
+      <!-- 4. Use iFrame to add this video to your page. -->
+      <section class="yt-video" id="yt-video">
+        <h2>YT-video</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/rklidcZ-aLU?si=Pa3d6qehlJIFCPZ-"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      <p></p>
+    </footer>
+  </body>
+</html>
